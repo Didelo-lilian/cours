@@ -1,0 +1,11 @@
+
+body {
+	max-width: 1024px;
+	min-width: 800px;
+	margin: auto;
+	padding-left: 450px;
+	padding-right: 450px; 
+	border-right: solid 2px black;
+	border-left: solid 2px black;
+}
+
