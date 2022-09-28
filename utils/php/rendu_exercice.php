@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<?php //TODO: rewrite this page using vue.js ?>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="../css/theme.css">
@@ -8,12 +8,10 @@
   <link rel="stylesheet" type="text/css" href="../css/cours.css">
   <link rel="stylesheet" type="text/css" href="../css/rendu.css">
   <title>Rendu Exercise</title>
-  <?php include("../php/script.php"); ?>
 </head>
 
 <body>
   <div class='tout'>
-    <?php include("../../php/newHeader.php"); ?>
     <div class="html">
       <form action="cible_exercice.php" method="post" enctype="multipart/form-data">
         <p>
@@ -26,8 +24,6 @@
         </p>
       </form>
     </div>
-    <?php include("../../php/newSocial.php"); ?>
-    <?php include("../../php/script_bottom.php"); ?>
   </div>
 </body>
 
