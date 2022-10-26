@@ -1,11 +1,11 @@
-name: DEPLOY-COURS
+name: deploy cours data on O2Switch
 on:
   push:
     branches:
     - main
 jobs: 
-  build_and_deploy:
-    runs-on: ubuntu-latest
+  deploy-data:
+    runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2 
     - name: rsync deployments
@@ -13,7 +13,7 @@ jobs:
       with:
         switches: -avzhe ssh --progress --delete
         path: ./
-        remote_path: /home/didelofr/public_html/lilian-data/cours
-        remote_host: didelo.fr
-        remote_user: didelofr
+        remote_path: /home/${{ secrets.O2SWITCH_USER }}/public_html/lilian/dev
+        remote_host: ${{ secrets.O2SWITCH_HOST }}
+        remote_user: ${{ secrets.O2SWITCH_USER }}
         remote_key: ${{ secrets.SSH_KEY }}
