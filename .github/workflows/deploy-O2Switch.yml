@@ -13,7 +13,7 @@ jobs:
       with:
         switches: -avzhe ssh --progress --delete
         path: ./
-        remote_path: /home/${{ secrets.O2SWITCH_USER }}/public_html/lilian/dev
+        remote_path: /home/${{ secrets.O2SWITCH_USER }}/public_html/lilian/data/cours
         remote_host: ${{ secrets.O2SWITCH_HOST }}
         remote_user: ${{ secrets.O2SWITCH_USER }}
         remote_key: ${{ secrets.SSH_KEY }}

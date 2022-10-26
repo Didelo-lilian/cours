@@ -13,7 +13,7 @@ jobs:
       with:
         switches: -avzhe ssh --progress --delete
         path: ./
-        remote_path: /home/didelofr/public_html/lilian-dev
+        remote_path: /home/didelofr/public_html/lilian-data/cours
         remote_host: didelo.fr
         remote_user: didelofr
         remote_key: ${{ secrets.SSH_KEY }}
